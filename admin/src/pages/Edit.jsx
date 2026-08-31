@@ -17,8 +17,8 @@ const { id } = useParams();
    const [name, setName] = useState("");
    const [description, setDescription] = useState("");
    const [price, setPrice] = useState("");
-   const [category, setCategory] = useState("Kitchen Containers");
-   const [subCategory, setSubCategory] = useState("");
+   const [category, setCategory] = useState("KNIFE");
+   const [subCategory, setSubCategory] = useState("KNIFE");
    const [bestseller, setBestseller] = useState(false);
    const [sizes, setSizes] = useState([]);
 const [packOf, setPackOf] = useState([]);
@@ -29,7 +29,7 @@ const [capacityInput, setCapacityInput] = useState("");
 const handlePackKeyDown = (e) => {
   if (e.key === "Enter" && packInput.trim() !== "") {
     e.preventDefault();
-
+// console.log(packInput)
     if (!packOf.includes(packInput.trim())) {
       setPackOf([...packOf, packInput.trim()]);
     }
@@ -99,7 +99,7 @@ const removeCapacity = (item) => {
     try {
       
       const formData = new FormData()
-
+// console.log('packOf',packOf)
       formData.append("name",name)
       formData.append("description",description)
       formData.append("price",price)
@@ -242,7 +242,9 @@ setCapacityInput("");
             <div>
               <p className='mb-2'>Product category</p>
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Kitchen Containers">Kitchen Containers</option>
+                   <option value="KNIFE">KNIFE</option>
+                <option value="CHOPPERS CUTTERS">CHOPPERS CUTTERS</option>
+                 <option value="BOTTLE">BOTTLE</option>
                  
               </select>
             </div>

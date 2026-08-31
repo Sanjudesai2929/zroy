@@ -17,7 +17,7 @@ const Add = ({token}) => {
    const [name, setName] = useState("");
    const [description, setDescription] = useState("");
    const [price, setPrice] = useState("");
-   const [category, setCategory] = useState("Kitchen Containers");
+   const [category, setCategory] = useState("KNIFE");
    const [subCategory, setSubCategory] = useState("");
    const [bestseller, setBestseller] = useState(false);
    const [sizes, setSizes] = useState([]);
@@ -162,8 +162,9 @@ setCapacityInput("");
             <div>
               <p className='mb-2'>Product category</p>
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Kitchen Containers">Kitchen Containers</option>
-                 
+                  <option value="KNIFE">KNIFE</option>
+                <option value="CHOPPERS CUTTERS">CHOPPERS CUTTERS</option>
+                 <option value="BOTTLE">BOTTLE</option>
               </select>
             </div>
 

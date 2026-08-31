@@ -3,145 +3,501 @@ import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <section className="w-full bg-[#faf9f6] border border-gray-200 overflow-hidden">
+  <section className="w-full overflow-hidden bg-[#f7f5f0]">
 
-      <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row min-h-[550px]">
+  <div className="max-w-[1600px] mx-auto">
 
-        {/* LEFT CONTENT */}
-        <div className="w-full md:w-1/2 flex items-center px-8 sm:px-12 lg:px-20 py-16 md:py-0">
+    <div className="
+      relative
+      min-h-[650px]
+      lg:min-h-[700px]
+      grid
+      grid-cols-1
+      lg:grid-cols-2
+      overflow-hidden
+    ">
 
-          <div className="max-w-xl">
+      {/* ================= LEFT CONTENT ================= */}
+      <div className="
+        relative
+        z-20
+        flex
+        items-center
+        px-6
+        sm:px-10
+        lg:px-16
+        xl:px-24
+        py-16
+        lg:py-20
+        bg-[#242424]
+        text-white
+      ">
 
-            {/* Small Heading */}
-            <div className="flex items-center gap-3 mb-5">
-              <span className="w-10 h-[2px] bg-[#d97706]"></span>
+        {/* Decorative Circle */}
+        <div className="
+          absolute
+          w-[280px]
+          h-[280px]
+          rounded-full
+          border
+          border-white/10
+          -top-32
+          -left-32
+        "></div>
 
-              <p className="text-[#d97706] uppercase tracking-[3px] text-sm font-semibold">
-                Kitchen Essentials
-              </p>
-            </div>
+        <div className="
+          absolute
+          w-[180px]
+          h-[180px]
+          rounded-full
+          border
+          border-[#d97706]/20
+          bottom-[-80px]
+          right-[-60px]
+        "></div>
 
-            {/* Main Heading */}
-            <h1 className="prata-regular text-4xl sm:text-5xl lg:text-6xl leading-[1.15] text-[#262626]">
-              Make Your Kitchen
-              <br />
 
-              <span className="text-[#d97706]">
-                Better & Beautiful
-              </span>
-            </h1>
+        <div className="relative max-w-2xl">
 
-            {/* Description */}
-            <p className="mt-6 text-gray-600 text-sm sm:text-base leading-7 max-w-lg">
-              Discover smart, stylish and practical kitchen essentials
-              designed to make everyday cooking easier, organized and
-              enjoyable.
+          {/* Brand Label */}
+          <div className="flex items-center gap-3 mb-7">
+
+            <span className="
+              w-10
+              h-[2px]
+              bg-[#d97706]
+            "></span>
+
+            <p className="
+              text-[#f59e0b]
+              uppercase
+              tracking-[4px]
+              text-xs
+              sm:text-sm
+              font-semibold
+            ">
+              Zroy Enterprise
             </p>
 
-            {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mt-8">
-
-              <button
-                className="bg-[#262626] text-white px-8 py-4 text-sm
-                font-semibold tracking-wide hover:bg-[#d97706]
-                transition-all duration-300"
-              >
-                SHOP NOW
-              </button>
-
-              <button
-                className="border border-[#262626] text-[#262626]
-                px-8 py-4 text-sm font-semibold tracking-wide
-                hover:bg-[#262626] hover:text-white
-                transition-all duration-300"
-              >
-                VIEW COLLECTION
-              </button>
-
-            </div>
-
-            {/* Features */}
-            <div className="flex flex-wrap gap-6 mt-10 pt-6 border-t border-gray-200">
-
-              <div>
-                <p className="font-semibold text-[#262626] text-sm">
-                  ✓ Quality Products
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-[#262626] text-sm">
-                  ✓ Smart Kitchen
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-[#262626] text-sm">
-                  ✓ Easy Shopping
-                </p>
-              </div>
-
-            </div>
-
           </div>
 
-        </div>
 
-
-        {/* RIGHT IMAGE */}
-        <div className="w-full md:w-1/2 relative min-h-[400px] md:min-h-0">
-
-          {/* Background Shape */}
-          <div className="absolute inset-0 bg-[#f3e9dc]"></div>
-
-          {/* Decorative Circle */}
-          <div className="absolute w-[350px] h-[350px]
-            lg:w-[500px] lg:h-[500px]
-            rounded-full bg-[#e8d3b5]
-            right-[-100px] top-1/2
-            -translate-y-1/2">
-          </div>
-
-          {/* Product Image */}
-          <img
-            src={assets.hero_img}
-            alt="Kitchen Containers Kitchen Products"
-            className="
-              relative
-              z-10
-              w-full
-              h-full
-              object-cover
-              md:object-contain
-              object-center
-            "
-          />
-
-          {/* Floating Badge */}
-          <div className="
-            absolute
-            z-20
-            bottom-8
-            left-8
-            bg-white
-            px-6
-            py-4
-            shadow-lg
+          {/* Main Heading */}
+          <h1 className="
+            prata-regular
+            text-4xl
+            sm:text-5xl
+            md:text-6xl
+            xl:text-7xl
+            leading-[1.05]
+            tracking-tight
           ">
-            <p className="text-xs uppercase tracking-widest text-gray-500">
-               Kitchen Containers
-            </p>
 
-            <p className="text-lg font-semibold text-[#262626] mt-1">
-              Smart • Stylish • Practical
-            </p>
+            Smart Products.
+            <br />
+
+            <span className="text-[#f59e0b]">
+              Better Living.
+            </span>
+
+          </h1>
+
+
+          {/* Description */}
+          <p className="
+            mt-7
+            text-gray-300
+            text-sm
+            sm:text-base
+            lg:text-lg
+            leading-7
+            max-w-xl
+          ">
+            Discover premium kitchen and everyday essentials designed
+            to make cooking, organizing and living simpler.
+          </p>
+
+
+          {/* Buttons */}
+          <div className="
+            flex
+            flex-wrap
+            gap-4
+            mt-9
+          ">
+
+            <button
+              className="
+                group
+                bg-[#d97706]
+                hover:bg-[#f59e0b]
+                text-white
+                px-7
+                sm:px-9
+                py-4
+                font-semibold
+                text-sm
+                tracking-wide
+                transition-all
+                duration-300
+                flex
+                items-center
+                gap-3
+              "
+            >
+              SHOP NOW
+
+              <span className="
+                transition-transform
+                duration-300
+                group-hover:translate-x-1
+              ">
+                →
+              </span>
+
+            </button>
+
+
+            <button
+              className="
+                border
+                border-white/40
+                hover:border-white
+                hover:bg-white
+                hover:text-[#242424]
+                text-white
+                px-7
+                sm:px-9
+                py-4
+                font-semibold
+                text-sm
+                tracking-wide
+                transition-all
+                duration-300
+              "
+            >
+              VIEW COLLECTION
+            </button>
+
+          </div>
+
+
+          {/* ================= TRUST FEATURES ================= */}
+          <div className="
+            grid
+            grid-cols-1
+            sm:grid-cols-3
+            gap-5
+            mt-12
+            pt-7
+            border-t
+            border-white/15
+          ">
+
+            <div className="flex items-center gap-3">
+
+              <div className="
+                w-9
+                h-9
+                rounded-full
+                bg-white/10
+                flex
+                items-center
+                justify-center
+                text-[#f59e0b]
+              ">
+                ✓
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold">
+                  Quality
+                </p>
+
+                <p className="text-xs text-gray-400">
+                  Tested Products
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="flex items-center gap-3">
+
+              <div className="
+                w-9
+                h-9
+                rounded-full
+                bg-white/10
+                flex
+                items-center
+                justify-center
+                text-[#f59e0b]
+              ">
+                ★
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold">
+                  Smart Choice
+                </p>
+
+                <p className="text-xs text-gray-400">
+                  Everyday Essentials
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="flex items-center gap-3">
+
+              <div className="
+                w-9
+                h-9
+                rounded-full
+                bg-white/10
+                flex
+                items-center
+                justify-center
+                text-[#f59e0b]
+              ">
+                ⚡
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold">
+                  Easy Shopping
+                </p>
+
+                <p className="text-xs text-gray-400">
+                  Fast & Simple
+                </p>
+              </div>
+
+            </div>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+
+      {/* ================= RIGHT PRODUCT AREA ================= */}
+      <div className="
+        relative
+        min-h-[480px]
+        lg:min-h-full
+        bg-[#eee8dc]
+        overflow-hidden
+      ">
+
+        {/* Large Background Circle */}
+        <div className="
+          absolute
+          w-[380px]
+          h-[380px]
+          sm:w-[500px]
+          sm:h-[500px]
+          lg:w-[620px]
+          lg:h-[620px]
+          rounded-full
+          bg-[#dfc9a8]
+          top-1/2
+          left-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+        "></div>
+
+
+        {/* Decorative Ring */}
+        <div className="
+          absolute
+          w-[430px]
+          h-[430px]
+          sm:w-[550px]
+          sm:h-[550px]
+          lg:w-[680px]
+          lg:h-[680px]
+          rounded-full
+          border
+          border-[#c6a77b]/40
+          top-1/2
+          left-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+        "></div>
+
+
+        {/* Small Top Label */}
+        <div className="
+          absolute
+          z-20
+          top-8
+          right-6
+          sm:right-10
+          lg:right-12
+          bg-white
+          px-5
+          py-3
+          shadow-xl
+        ">
+
+          <p className="
+            text-[10px]
+            uppercase
+            tracking-[3px]
+            text-gray-500
+          ">
+            Zroy Collection
+          </p>
+
+          <p className="
+            text-sm
+            font-bold
+            text-[#242424]
+            mt-1
+          ">
+            Kitchen • Home • Utility
+          </p>
+
+        </div>
+
+
+        {/* PRODUCT IMAGE */}
+        <img
+          src={assets.hero_img}
+          alt="Zroy Enterprise Kitchen Products"
+          className="
+            absolute
+            z-10
+            w-full
+            h-full
+            object-contain
+            object-center
+            p-5
+            sm:p-8
+            lg:p-10
+            scale-[1.02]
+            transition-transform
+            duration-700
+            hover:scale-[1.05]
+          "
+        />
+
+
+        {/* ================= FLOATING CATEGORY CARD ================= */}
+
+        <div className="
+          absolute
+          z-30
+          bottom-7
+          left-5
+          sm:left-8
+          lg:left-10
+          bg-white
+          shadow-2xl
+          px-5
+          py-4
+          sm:px-7
+          sm:py-5
+        ">
+
+          <p className="
+            text-[10px]
+            sm:text-xs
+            uppercase
+            tracking-[3px]
+            text-gray-500
+          ">
+            Featured Products
+          </p>
+
+          <div className="
+            flex
+            items-center
+            gap-4
+            mt-2
+          ">
+
+            <span className="
+              text-xl
+              sm:text-2xl
+            ">
+              🔪
+            </span>
+
+            <div>
+              <p className="
+                font-bold
+                text-[#242424]
+                text-sm
+                sm:text-base
+              ">
+                Knives • Choppers
+              </p>
+
+              <p className="
+                text-xs
+                text-gray-500
+                mt-1
+              ">
+                Built for everyday use
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* ================= RIGHT SIDE MINI BADGE ================= */}
+
+        <div className="
+          absolute
+          z-30
+          right-5
+          sm:right-8
+          lg:right-10
+          bottom-24
+          sm:bottom-28
+          bg-[#242424]
+          text-white
+          px-4
+          py-3
+          shadow-xl
+          hidden
+          sm:block
+        ">
+
+          <p className="
+            text-[10px]
+            uppercase
+            tracking-widest
+            text-gray-400
+          ">
+            Everyday Essentials
+          </p>
+
+          <p className="
+            text-sm
+            font-semibold
+            text-[#f59e0b]
+            mt-1
+          ">
+            Smart • Strong • Useful
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   )
 }
 

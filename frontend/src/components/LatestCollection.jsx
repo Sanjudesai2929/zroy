@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import { ShopContext } from '../context/ShopContext'
 import Title from './Title'
 import ProductItem from './ProductItem'
@@ -22,25 +23,112 @@ const LatestCollection = () => {
 
       <ScrollReveal>
 
-        <div className="text-center pb-10">
+       <div className="
+          flex
+          flex-col
+          md:flex-row
+          md:items-end
+          md:justify-between
+          gap-6
+          mb-12
+        ">
 
-          <Title
-            text1="LATEST"
-            text2="COLLECTIONS"
-          />
+          <div>
 
-          <p className="
-            max-w-xl
-            mx-auto
-            mt-3
-            text-xs
-            sm:text-sm
-            md:text-base
-            text-gray-500
-          ">
-            Fresh kitchen essentials designed to make
-            everyday cooking easier and more beautiful.
-          </p>
+            {/* Small Label */}
+            <div className="
+              flex
+              items-center
+              gap-3
+              mb-4
+            ">
+
+              <span className="
+                w-9
+                h-[2px]
+                bg-[#d97706]
+              "></span>
+
+              <p className="
+                text-[#d97706]
+                uppercase
+                tracking-[3px]
+                text-xs
+                sm:text-sm
+                font-semibold
+              ">
+                Zroy Picks
+              </p>
+
+            </div>
+
+
+            {/* Main Heading */}
+            <h2 className="
+              prata-regular
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              text-[#242424]
+              leading-tight
+            ">
+
+              Our Most Wanted
+              <br />
+
+              <span className="text-[#d97706]">
+                Essentials
+              </span>
+
+            </h2>
+
+
+            <p className="
+              mt-4
+              text-sm
+              sm:text-base
+              text-gray-500
+              max-w-xl
+              leading-7
+            ">
+              Discover practical products made for everyday
+              cooking, organizing and living.
+            </p>
+
+          </div>
+
+
+        {/* View All Button */}
+<Link
+  to="/collection"
+  className="
+    group
+    flex
+    items-center
+    gap-3
+    text-sm
+    font-semibold
+    text-[#242424]
+    border-b
+    border-[#242424]
+    pb-2
+    w-fit
+    hover:text-[#d97706]
+    hover:border-[#d97706]
+    transition-all
+    duration-300
+  "
+>
+  VIEW ALL PRODUCTS
+
+  <span className="
+    transition-transform
+    duration-300
+    group-hover:translate-x-1
+  ">
+    →
+  </span>
+</Link>
 
         </div>
 
