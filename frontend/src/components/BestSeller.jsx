@@ -193,7 +193,7 @@ const BestSeller = () => {
               <div className="
                 relative
                 bg-[#f7f5f0]
-                aspect-[4/5]
+              
                 overflow-hidden
               ">
 
@@ -220,22 +220,21 @@ const BestSeller = () => {
 
                 {/* Product */}
 
-                <div className="
-                  w-full
-                  h-full
-                  flex
-                  items-center
-                  justify-center
-                ">
+                 <div className="
+              group
+              transition-all
+              duration-500
+              hover:-translate-y-2
+            ">
 
-                  <ProductItem
-                    id={item._id}
-                    name={item.name}
-                    image={item.image}
-                    price={item.price}
-                  />
+              <ProductItem
+                id={item._id}
+                image={item.image}
+                name={item.name}
+                price={item.price}
+              />
 
-                </div>
+            </div>
 
 
                 {/* Hover Overlay */}
