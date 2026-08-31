@@ -193,11 +193,10 @@ const BestSeller = () => {
               <div className="
                 relative
                 bg-[#f7f5f0]
-              
+                
                 overflow-hidden
               ">
-
-                {/* Bestseller Badge */}
+                {/* Bestseller Badge11 */}
 
                 <div className="
                   absolute
